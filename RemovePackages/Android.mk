@@ -30,7 +30,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     TurboPrebuilt \
     Recorder \
     SecureElement \
-    ScribePrebuilt_v7.0.633113815 \
+    ScribePrebuilt_v8.2.717788270 \
     SafetyHubSuwPrebuilt \
     Seedvault \
     Stk \
