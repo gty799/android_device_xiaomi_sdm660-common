@@ -7,8 +7,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AudioFX \
     Aperture \
-    AndroidAutoStubPrebuilt \
-    BuiltInPrintService\
     CalculatorGooglePrebuilt_85005407 \
     CalendarGooglePrebuilt \
     DevicePolicyPrebuilt-v10306480 \
