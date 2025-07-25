@@ -113,7 +113,7 @@
     </hal>
     <hal format="aidl">
         <name>android.hardware.usb.gadget</name>
-        <version></version>
+        <version>default</version>
         <interface>
             <name>IUsbGadget</name>
             <instance>default</instance>
