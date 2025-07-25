@@ -7,6 +7,10 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AudioFX \
     Aperture \
+    Chrome \
+    Chrome-stub \
+    AndroidAutoStubPrebuilt \
+    PrebuiltGmail \
     CalculatorGooglePrebuilt_85005407 \
     CalendarGooglePrebuilt \
     DevicePolicyPrebuilt-v10306480 \
@@ -40,6 +44,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     MatLog \
     QuickAccessWallet \
     ViaBrowser
+
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
