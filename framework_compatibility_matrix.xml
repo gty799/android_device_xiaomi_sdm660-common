@@ -1,4 +1,135 @@
 <compatibility-matrix version="2.0" type="framework">
+<manifest version="1.0" type="device">
+    <!-- AIDL HALs -->
+    <hal format="aidl">
+        <name>android.hardware.health</name>
+        <version>default</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <version>default</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.config</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.data</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioData</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>IRadioData</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.messaging</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioMessaging</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>IRadioMessaging</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.modem</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioModem</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>IRadioModem</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.network</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioNetwork</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>IRadioNetwork</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.sim</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioSim</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>IRadioSim</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.radio.voice</name>
+        <version>default</version>
+        <interface>
+            <name>IRadioVoice</name>
+            <instance>slot1</instance>
+        </interface>
+        <interface>
+            <name>IRadioVoice</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.thermal</name>
+        <version>default</version>
+        <interface>
+            <name>IThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.usb</name>
+        <version>default</version>
+        <interface>
+            <name>IUsb</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.usb.gadget</name>
+        <version></version>
+        <interface>
+            <name>IUsbGadget</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Still HIDL (no AIDL support yet or not public): -->
+    <hal format="hidl">
+        <name>vendor.lineage.health</name>
+        <version>1.0</version>
+        <interface>
+            <name>IChargingControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.audio.effect</name>
         <version>7.0</version>
