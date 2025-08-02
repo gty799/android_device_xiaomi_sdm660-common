@@ -11,7 +11,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Chrome-stub \
     AndroidAutoStubPrebuilt \
     PrebuiltGmail \
-    CalculatorGooglePrebuilt_85005407 \
     CalendarGooglePrebuilt \
     DevicePolicyPrebuilt-v10306480 \
     DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08 \
@@ -30,7 +29,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     SoundAmplifierPrebuilt_v4.7.638126989 \
     SwitchAccessPrebuilt_1.16.0.726766860 \
     TurboPrebuilt \
-    Recorder \
     SecureElement \
     ScribePrebuilt_v8.2.717788270 \
     SafetyHubSuwPrebuilt \
@@ -39,7 +37,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Traceur \
     Twelve \
     WellbeingPrebuilt \
-    WeatherPixelPrebuilt_24D1 \
     Velvet \
     MatLog \
     QuickAccessWallet \
