@@ -4,8 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # Remove packages
-PRODUCT_PACKAGES += \
-    RemovePackages
+# PRODUCT_PACKAGES += \ RemovePackages
 
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 # Inherit from those products. Most specific first.
