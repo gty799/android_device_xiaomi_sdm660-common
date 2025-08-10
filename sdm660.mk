@@ -87,9 +87,6 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.sdm660
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.paranoid.maintainer=Timofeyvv8
-
 # Audio Configs
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(COMMON_PATH)/configs/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
