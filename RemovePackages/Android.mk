@@ -7,7 +7,6 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AudioFX \
     Aperture \
-    AndroidAutoStubPrebuilt \
     PrebuiltGmail \
     DevicePolicyPrebuilt-v10306480 \
     DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08 \
