@@ -7,30 +7,21 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AudioFX \
     Aperture \
-    Chrome \
-    Chrome-stub \
     AndroidAutoStubPrebuilt \
     PrebuiltGmail \
-    CalculatorGooglePrebuilt_85005407 \
-    CalendarGooglePrebuilt \
     DevicePolicyPrebuilt-v10306480 \
     DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08 \
     DevicePersonalizationPrebuiltPixel2024-bfinal_aiai_20250217.00_RC08 \
     GoogleTTS \
     GoogleRestorePrebuilt-v636048 \
     Etar \
-    ExactCalculator \
-    EmergencyInfo \
     FM2 \
     Jelly \
-    LiveWallpapersPicker \
     Music \
     Maps \
-    Photos \
     SoundAmplifierPrebuilt_v4.7.638126989 \
     SwitchAccessPrebuilt_1.16.0.726766860 \
     TurboPrebuilt \
-    Recorder \
     SecureElement \
     ScribePrebuilt_v8.2.717788270 \
     SafetyHubSuwPrebuilt \
@@ -39,7 +30,6 @@ LOCAL_OVERRIDES_PACKAGES := \
     Traceur \
     Twelve \
     WellbeingPrebuilt \
-    WeatherPixelPrebuilt_24D1 \
     Velvet \
     MatLog \
     QuickAccessWallet \
