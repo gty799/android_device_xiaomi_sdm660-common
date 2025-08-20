@@ -49,7 +49,7 @@
 	    <library name="v4a_re" path="libv4a_re.so"/>
 		<!-- DOLBY DAP -->
         <library name="vqe" path="libswvqe.so"/>
-        <library name="dap" path="libswdap.so"/>
+        <library name="dap" path="libhwdap.so"/>
         <!-- DOLBY END -->
         <!--DOLBY GAME-->
         <library name="gamedap" path="libswgamedap.so"/>
