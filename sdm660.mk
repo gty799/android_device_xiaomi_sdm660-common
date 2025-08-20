@@ -5,7 +5,7 @@
 #
 # Remove packages
 PRODUCT_PACKAGES += \ 
-  RemovePackages
+   RemovePackages
 
 $(call inherit-product, hardware/dolby/dolby.mk)
 # $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
