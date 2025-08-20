@@ -126,6 +126,9 @@
         <!--DOLBY VQE-->
         <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
         <!--DOLBY END-->
+		<!--Spatial Audio-->
+        <library name="spatializer" path="libspatialaudio.so"/>
+	    <!--Spatial Audio-->
     </effects>
     <postprocess>
 		 <stream type="music">
