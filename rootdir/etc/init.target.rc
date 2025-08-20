@@ -75,12 +75,6 @@ on init
     chown system system /dev/cpuset/application/performance/tasks
     chmod 0660 /dev/cpuset/application/performance/tasks
 
-    mkdir /dev/cpuset/application/background 0750 root system
-    write /dev/cpuset/application/background/cpus 0
-    write /dev/cpuset/application/background/mems 0
-    chown system system /dev/cpuset/application/background/tasks
-    chmod 0660 /dev/cpuset/application/background/tasks
-
     write /dev/cpuset/kernel/cpus 0-7
     write /dev/cpuset/system/cpus 0-7
     write /dev/cpuset/system/performance/cpus 0-7
@@ -532,9 +526,6 @@ service seempd /system/bin/seempd
 on property:sys.boot_completed=1
     # Enable EAS
     write /proc/sys/kernel/sched_energy_aware 1
-
-    # Setup final cpuset
-    write /dev/cpuset/restricted/cpus 0-3
 
 # MIUI camera flag
 on property:sys.camera.miui.apk=*
