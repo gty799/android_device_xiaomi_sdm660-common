@@ -26,6 +26,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Traceur \
     Twelve \
     MatLog \
+    Lawnicons \
     QuickAccessWallet 
 
 
