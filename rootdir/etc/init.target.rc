@@ -548,6 +548,7 @@ on property:sys.boot_completed=1
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     # Setup final cpuset
     write /dev/cpuset/top-app/cpus 0-7
@@ -562,6 +563,11 @@ on property:sys.boot_completed=1
     write /dev/cpuset/restricted/cpus 0-3
 
 >>>>>>> parent of 4a376616 (Lavender : Delete cpuset)
+=======
+    # Setup final cpuset
+    write /dev/cpuset/restricted/cpus 0-3
+
+>>>>>>> parent of 3668b821 (Lavender : Delete cpuset)
 # MIUI camera flag
 on property:sys.camera.miui.apk=*
     setprop vendor.camera.miui.apk ${sys.camera.miui.apk}
