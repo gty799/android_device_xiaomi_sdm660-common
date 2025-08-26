@@ -153,12 +153,15 @@
         <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
         <!--DOLBY END-->
 <<<<<<< HEAD
+<<<<<<< HEAD
 		<!--Spatial Audio-->
         <effect name="spatializer" library="spatializer" uuid="cc4677de-ff72-11eb-9a03-0242ac130003"/>
 	<!--Spatial Audio-->
 =======
 	<effect name="v4a_standard_re" library="v4a_re" uuid="90380da3-8536-4744-a6a3-5731970e640f"/>
 >>>>>>> parent of 79256d80 (Lavender: add dolby)
+=======
+>>>>>>> parent of 66ba48cc (Lavender : Add dolby)
     </effects>
     <postprocess>
         <stream type="music">
