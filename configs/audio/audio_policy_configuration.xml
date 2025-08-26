@@ -265,9 +265,13 @@
                 <devicePort tagName="Telephony Rx" type="AUDIO_DEVICE_IN_TELEPHONY_RX" role="source">
                     <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
                              samplingRates="8000 16000 48000" channelMasks="AUDIO_CHANNEL_IN_MONO"/>
+<<<<<<< HEAD
                 </devicePort>
 <<<<<<< HEAD
 <<<<<<< HEAD
+=======
+                </devicePort
+>>>>>>> parent of 40c98f92 (Lavender : Fix Dolby)
                      
 =======
 
