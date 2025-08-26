@@ -159,10 +159,6 @@ on post-fs-data
 on early-boot
     write /dev/ipa 1
 
-    # Dolby
-    mkdir /data/vendor/dolby 0770 media media
-    mkdir /data/vendor/multimedia 0775 system system
-
 on boot
     start vendor.rmt_storage
 
