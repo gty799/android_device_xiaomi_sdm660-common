@@ -7,17 +7,13 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_OVERRIDES_PACKAGES := \
     AudioFX \
     Aperture \
-    PrebuiltGmail \
     DevicePolicyPrebuilt-v10306480 \
     DevicePersonalizationPrebuiltPixel2024-U.32_V.7_playstore_aiai_20240725.00_RC08 \
     DevicePersonalizationPrebuiltPixel2024-bfinal_aiai_20250217.00_RC08 \
-    GoogleTTS \
     GoogleRestorePrebuilt-v636048 \
     Etar \
     FM2 \
     Jelly \
-    Music \
-    Maps \
     SoundAmplifierPrebuilt_v4.7.638126989 \
     SwitchAccessPrebuilt_1.16.0.726766860 \
     TurboPrebuilt \
@@ -29,10 +25,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Traceur \
     Twelve \
     WellbeingPrebuilt \
-    Velvet \
-    MatLog \
-    QuickAccessWallet \
-    ViaBrowser
+    QuickAccessWallet
 
 
 LOCAL_UNINSTALLABLE_MODULE := true
