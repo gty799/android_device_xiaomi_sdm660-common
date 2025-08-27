@@ -127,6 +127,7 @@
         <!--DOLBY VQE-->
         <effect name="vqe" library="vqe" uuid="64a0f614-7fa4-48b8-b081-d59dc954616f"/>
         <!--DOLBY END-->
+    </effects>
     <postprocess>
         <stream type="voice_call">
             <apply effect="voice_helper"/>
