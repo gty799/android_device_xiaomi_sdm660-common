@@ -25,6 +25,7 @@ LOCAL_OVERRIDES_PACKAGES := \
     Traceur \
     Twelve \
     WellbeingPrebuilt \
+    Lawnicons \
     QuickAccessWallet
 
 
