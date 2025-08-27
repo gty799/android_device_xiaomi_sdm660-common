@@ -4853,7 +4853,7 @@ case "$target" in
 	echo 85 85 > /proc/sys/kernel/sched_downmigrate
 	echo 100 > /proc/sys/kernel/sched_group_upmigrate
 	echo 10 > /proc/sys/kernel/sched_group_downmigrate
-	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_task
+	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
