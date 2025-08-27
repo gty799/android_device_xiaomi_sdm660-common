@@ -2351,10 +2351,6 @@ case "$target" in
             echo 614400 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
             echo 633600 > /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
 
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
-
             # re-enable thermal & BCL core_control now
             echo 1 > /sys/module/msm_thermal/core_control/enabled
             for mode in /sys/devices/soc.0/qcom,bcl.*/mode
@@ -2704,10 +2700,6 @@ case "$target" in
                      echo 140 > /proc/sys/kernel/sched_group_upmigrate
                      echo 120 > /proc/sys/kernel/sched_group_downmigrate
 
-                     # cpuset settings
-                     #echo 0-3 > /dev/cpuset/background/cpus
-                     #echo 0-3 > /dev/cpuset/system-background/cpus
-
                      # Bring up all cores online
                      echo 1 > /sys/devices/system/cpu/cpu1/online
                      echo 1 > /sys/devices/system/cpu/cpu2/online
@@ -2892,10 +2884,6 @@ case "$target" in
             echo 15 > /proc/sys/kernel/sched_init_task_load
             echo 1 > /proc/sys/kernel/sched_restrict_cluster_spill
             echo 50000 > /proc/sys/kernel/sched_short_burst_ns
-
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
 
             # disable thermal bcl hotplug to switch governor
             echo 0 > /sys/module/msm_thermal/core_control/enabled
@@ -3121,10 +3109,6 @@ case "$target" in
             echo N > /sys/module/lpm_levels/L3/cpu6/ret/idle_enabled
             echo N > /sys/module/lpm_levels/L3/cpu7/ret/idle_enabled
 
-            # cpuset parameters
-            echo 0-5 > /dev/cpuset/background/cpus
-            echo 0-5 > /dev/cpuset/system-background/cpus
-
             # Turn off scheduler boost at the end
             echo 0 > /proc/sys/kernel/sched_boost
 
@@ -3160,11 +3144,6 @@ case "$target" in
             echo 77 > /proc/sys/kernel/sched_upmigrate
             echo 85 > /proc/sys/kernel/sched_group_downmigrate
             echo 100 > /proc/sys/kernel/sched_group_upmigrate
-
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
-
 
             # configure governor settings for little cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -3366,10 +3345,6 @@ case "$target" in
       # device/target specific folder
       setprop vendor.dcvs.prop 1
 
-            # cpuset parameters
-            echo 0-5 > /dev/cpuset/background/cpus
-            echo 0-5 > /dev/cpuset/system-background/cpus
-
             # Turn off scheduler boost at the end
             echo 0 > /proc/sys/kernel/sched_boost
 
@@ -3480,10 +3455,6 @@ case "$target" in
             # memlat specific settings are moved to seperate file under
             # device/target specific folder
             setprop vendor.dcvs.prop 1
-
-            # cpuset parameters
-                echo 0-5 > /dev/cpuset/background/cpus
-                echo 0-5 > /dev/cpuset/system-background/cpus
 
                 # Turn off scheduler boost at the end
                 echo 0 > /proc/sys/kernel/sched_boost
@@ -3657,10 +3628,6 @@ case "$target" in
         setprop vendor.dcvs.prop 0
         setprop vendor.dcvs.prop 1
 
-        # cpuset parameters
-        echo 0-5 > /dev/cpuset/background/cpus
-        echo 0-5 > /dev/cpuset/system-background/cpus
-
         # Turn off scheduler boost at the end
         echo 0 > /proc/sys/kernel/sched_boost
 
@@ -3801,10 +3768,6 @@ case "$target" in
         # device/target specific folder
         setprop vendor.dcvs.prop 1
 
-        # cpuset parameters
-        echo 0-5 > /dev/cpuset/background/cpus
-        echo 0-5 > /dev/cpuset/system-background/cpus
-
         # Turn off scheduler boost at the end
         echo 0 > /proc/sys/kernel/sched_boost
 
@@ -3840,11 +3803,6 @@ case "$target" in
             echo 77 > /proc/sys/kernel/sched_upmigrate
             echo 85 > /proc/sys/kernel/sched_group_downmigrate
             echo 100 > /proc/sys/kernel/sched_group_upmigrate
-
-            # cpuset settings
-            echo 0-3 > /dev/cpuset/background/cpus
-            echo 0-3 > /dev/cpuset/system-background/cpus
-
 
             # configure governor settings for little cluster
             echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -4107,10 +4065,6 @@ case "$target" in
     # device/target specific folder
     setprop vendor.dcvs.prop 1
 
-    # cpuset parameters
-    echo 0-5 > /dev/cpuset/background/cpus
-    echo 0-5 > /dev/cpuset/system-background/cpus
-
     # Turn off scheduler boost at the end
     echo 0 > /proc/sys/kernel/sched_boost
 
@@ -4194,10 +4148,6 @@ case "$target" in
             done
 
             echo "cpufreq" > /sys/class/devfreq/soc:qcom,mincpubw/governor
-
-            # cpuset parameters
-            echo 0-5 > /dev/cpuset/background/cpus
-            echo 0-5 > /dev/cpuset/system-background/cpus
 
             # Turn off scheduler boost at the end
             echo 0 > /proc/sys/kernel/sched_boost
@@ -4687,11 +4637,7 @@ case "$target" in
         echo 4000 > /sys/class/devfreq/soc:qcom,l3-cpu4/mem_latency/ratio_ceil
 
 	echo "compute" > /sys/class/devfreq/soc:qcom,mincpubw/governor
-	echo 10 > /sys/class/devfreq/soc:qcom,mincpubw/polling_interval
-
-	# cpuset parameters
-        echo 0-3 > /dev/cpuset/background/cpus
-        echo 0-3 > /dev/cpuset/system-background/cpus
+	echo 10 > /sys/class/devfreq/soc:qcom,mincpubw/polling_inte
 
 	# Turn off scheduler boost at the end
         echo 0 > /proc/sys/kernel/sched_boost
@@ -4747,10 +4693,6 @@ case "$target" in
 	echo 10 > /proc/sys/kernel/sched_group_downmigrate
 	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
-	# cpuset parameters
-	echo 0-3 > /dev/cpuset/background/cpus
-	echo 0-3 > /dev/cpuset/system-background/cpus
-
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
 
@@ -4783,9 +4725,6 @@ case "$target" in
 	# Disable wsf, beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
         echo 1 > /proc/sys/vm/watermark_scale_factor
-
-        echo 0-3 > /dev/cpuset/background/cpus
-        echo 0-3 > /dev/cpuset/system-background/cpus
 
         # Enable oom_reaper
 	if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
@@ -4914,11 +4853,7 @@ case "$target" in
 	echo 85 85 > /proc/sys/kernel/sched_downmigrate
 	echo 100 > /proc/sys/kernel/sched_group_upmigrate
 	echo 10 > /proc/sys/kernel/sched_group_downmigrate
-	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-
-	# cpuset parameters
-	echo 0-3 > /dev/cpuset/background/cpus
-	echo 0-3 > /dev/cpuset/system-background/cpus
+	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_task
 
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
@@ -4948,9 +4883,6 @@ case "$target" in
 	# Disable wsf, beacause we are using efk.
 	# wsf Range : 1..1000 So set to bare minimum value 1.
         echo 1 > /proc/sys/vm/watermark_scale_factor
-
-        echo 0-3 > /dev/cpuset/background/cpus
-        echo 0-3 > /dev/cpuset/system-background/cpus
 
         # Enable oom_reaper
 	if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
@@ -5128,10 +5060,6 @@ case "$target" in
 	echo 85 > /proc/sys/kernel/sched_group_downmigrate
 	echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 	echo 400000000 > /proc/sys/kernel/sched_coloc_downmigrate_ns
-
-	# cpuset parameters
-	echo 0-3 > /dev/cpuset/background/cpus
-	echo 0-3 > /dev/cpuset/system-background/cpus
 
 	# Turn off scheduler boost at the end
 	echo 0 > /proc/sys/kernel/sched_boost
@@ -5370,8 +5298,6 @@ case "$target" in
 	echo N > /sys/module/lpm_levels/system/perf/perf-l2-ret/idle_enabled
 	echo N > /sys/module/lpm_levels/parameters/sleep_disabled
 
-        echo 0-3 > /dev/cpuset/background/cpus
-        echo 0-3 > /dev/cpuset/system-background/cpus
         echo 0 > /proc/sys/kernel/sched_boost
 
         # Set Memory parameters

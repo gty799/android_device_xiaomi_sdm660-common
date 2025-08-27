@@ -39,11 +39,6 @@ on init
     write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
 
     # Add a cpuset for the camera daemon
-    mkdir /dev/cpuset/camera-daemon 0750 cameraserver cameraserver
-    write /dev/cpuset/camera-daemon/cpus 0-7
-    write /dev/cpuset/camera-daemon/mems 0
-    chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
-    chmod 0660 /dev/cpuset/camera-daemon/tasks
 
     # Create an stune group for camera-specific processes
     mkdir /dev/stune/camera-daemon
@@ -62,12 +57,6 @@ on init
     write /dev/cpuset/system/performance/mems 0
     chown system system /dev/cpuset/system/performance/tasks
     chmod 0660 /dev/cpuset/system/performance/tasks
-
-    mkdir /dev/cpuset/system/background 0750 root system
-    write /dev/cpuset/system/background/cpus 0
-    write /dev/cpuset/system/background/mems 0
-    chown system system /dev/cpuset/system/background/tasks
-    chmod 0660 /dev/cpuset/system/background/tasks
 
     mkdir /dev/cpuset/application 0750 root system
     write /dev/cpuset/application/cpus 0
@@ -90,7 +79,6 @@ on init
     write /dev/cpuset/kernel/cpus 0-7
     write /dev/cpuset/system/cpus 0-7
     write /dev/cpuset/system/performance/cpus 0-7
-    write /dev/cpuset/system/background/cpus 0-7
     write /dev/cpuset/system/cpus 0-7
     write /dev/cpuset/application/cpus 0-7
     write /dev/cpuset/application/performance/cpus 0-7
@@ -183,11 +171,6 @@ on boot
     chown system system /sys/class/thermal/thermal_message/temp_state
     
     # Cpusets
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/foreground/boost/cpus 0-7
-    write /dev/cpuset/background/cpus 0-7
-    write /dev/cpuset/system-background/cpus 0-7
     ####Regionalization config and prop files####
     chmod 0644 /persist/speccfg/spec
     chmod 0644 /persist/speccfg/devicetype
@@ -543,10 +526,6 @@ on property:sys.boot_completed=1
     write /proc/sys/kernel/sched_energy_aware 1
 
     # Setup final cpuset
-    write /dev/cpuset/top-app/cpus 0-7
-    write /dev/cpuset/foreground/cpus 0-7
-    write /dev/cpuset/background/cpus 0-3
-    write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
 # MIUI camera flag
