@@ -18,9 +18,6 @@ bt.max.hfpclient.connections=1
 vendor.hw.fm.init=0
 ro.bluetooth.wipower=false
 
-# Maintainer
-ro.paranoid.maintainer=Timofeyvv8
-
 # Blur
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
