@@ -4637,7 +4637,7 @@ case "$target" in
         echo 4000 > /sys/class/devfreq/soc:qcom,l3-cpu4/mem_latency/ratio_ceil
 
 	echo "compute" > /sys/class/devfreq/soc:qcom,mincpubw/governor
-	echo 10 > /sys/class/devfreq/soc:qcom,mincpubw/polling_inte
+	echo 10 > /sys/class/devfreq/soc:qcom,mincpubw/polling_interval
 
 	# Turn off scheduler boost at the end
         echo 0 > /proc/sys/kernel/sched_boost
