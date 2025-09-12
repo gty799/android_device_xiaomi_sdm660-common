@@ -29,15 +29,13 @@ LOCAL_OVERRIDES_PACKAGES := \
     Traceur \
     Twelve \
     WellbeingPrebuilt \
-<<<<<<< HEAD
     Velvet \
     MatLog \
     QuickAccessWallet \
-    ViaBrowser
-=======
+    ViaBrowser \
     Lawnicons \
     QuickAccessWallet
->>>>>>> 756752a8 (Lavender : Add dolby Atmos)
+
 
 
 LOCAL_UNINSTALLABLE_MODULE := true
